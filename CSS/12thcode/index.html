@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* element selector */
+        div{
+            background-color: aqua;
+        }
+        /* Class selector */
+        .red{
+            background-color: rgb(255, 149, 149);
+        }
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        /* this line work on direct child only */
+        div>p{
+            color:blue;
+        }
+
+        /* descendant selector */
+        div p{
+            color: rgb(229, 135, 19);
+            background-color: burlywood;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* puseudo selector */
+        a:visited{
+            color:rgb(90, 90, 0)
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: magenta;
+        }
+        /* jahan jahan p apane parent ka first child h waah waah iska color pink kr do */
+        p:first-child{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <P>I am second</P>
+    </main>
+    <div class="red">
+        I am a div
+        <p>I am para inside div</p>
+    </div>
+    <div id="green">
+        I am a another div
+    </div>
+    <div>
+        hello
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </article>
+    </div>
+    <a href="https://www.google.com" target="_blank">go to google</a>
+    <a href="https://www.facebook.com" target="_blank">go to facebook</a>
+</body>
+</html>

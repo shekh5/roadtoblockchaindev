@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body{
+            background-color: beige;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .art{
+            margin: 15vw;
+            padding: 2vw;
+            border: 2px;
+            border-style: solid;
+            border-color: black;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(221, 4, 4);
+            max-width: 600px;
+            }
+        .imagediv{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1vw;
+        }
+        .tag{
+            border: 1px solid black ;
+            border-radius: 20px;
+            width: 60px;
+            display: inline-flex;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 5px 10px;
+        }
+        .tag3{
+            background-color: aquamarine;
+            position: relative;
+            left: 11vw;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: 1px solid lightgreen;
+            height: 40px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1vw;
+        }
+        h1{
+            font-size: 2em;
+            margin: 0.5em 0;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            line-height: 1.6;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article class="art">
+            <div class="imagediv">
+                <img src="image1.png" alt="dal lake image" width="70%"  >
+            </div>
+            <div class="tag tag1">
+                <p>Nature</p>
+            </div>
+            <div class="tag tag1">
+                <p>lake</p>
+            </div>
+            <h1>Lago di Braies</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, aliquam. Accusamus eaque nemo eveniet
+                rem.</p>
+                <div class="tag3">
+                    <a href="#" id="rm">Read More</a>
+                </div>
+        </article>
+    </main>
+</body>
+
+</html>

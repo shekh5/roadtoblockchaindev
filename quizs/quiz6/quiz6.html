@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Navbar</title>
+    <style>
+        :root{
+            --color:yellow;
+            --color1:green;
+            --color2:blue;
+            --color3:red;
+        }
+        ul{
+            display: flex;
+            background-color: var(--color);
+        }
+        ul li{
+            padding: 6px;
+            list-style: none;
+        }
+        ul li:first-child{
+            background-color: var(--color1);
+        }
+        ul li:nth-child(2){
+            background-color: var(--color2);
+        }
+        ul li:nth-child(3){
+            background-color: var(--color3);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li >Home</li>
+            <li >About</li>
+            <li >Contact</li>
+        </ul>
+    </div>
+</body>
+</html>

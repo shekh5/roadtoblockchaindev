@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .boxes{
+            background-color: grey;
+        }
+        .box:first-child {
+            background-color: rgb(248, 139, 139);
+        }
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        .box::first-line {
+            color: yellow;
+        }
+        p,a,.box,[data-color="primary"]{
+            margin: 8px;
+            padding: 20px;
+        }
+        .box:nth-child(even){
+            background-color: blue;
+        }
+        .box:nth-last-child(1){
+            background-color: orangered;
+        }
+        .boxes::before{
+            content: "harry is good";
+            color: blue;
+        }
+        .boxes::after{
+            content: "Bhawani is good";
+            color: red;
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 40px;
+        }
+        input::placeholder{
+            color:rgb(70, 70, 79);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus quo temporibus quam nesciunt
+                culpa, exercitationem consequatur commodi a esse doloremque quae molestias itaque nostrum ducimus! Modi
+                adipisci obcaecati itaque exercitationem voluptatum quos temporibus possimus porro non id ad ullam qui
+                autem, a culpa nam, tempore voluptatem! Sapiente perspiciatis blanditiis fugiat repellendus harum vel
+                vero eius ipsa eligendi, tenetur veritatis inventore. Minima, voluptas fuga quis fugit blanditiis quos
+                aliquid magnam tempora quasi, neque aspernatur illo molestias mollitia omnis ipsa, nemo nam quia dolores
+                voluptates excepturi adipisci veritatis quaerat quo! Eius, laboriosam reiciendis maiores dolore
+                assumenda voluptatum omnis autem tenetur nostrum nobis voluptatem aperiam ut dolores minima iste
+                voluptatibus dicta dolor! Voluptate excepturi quis blanditiis minus sapiente debitis, natus autem
+                recusandae itaque libero animi, enim ab porro facilis at ipsa repellendus nihil corrupti perspiciatis
+                delectus laudantium. Voluptatem suscipit magnam et hic officia voluptatum totam perspiciatis cupiditate
+                optio amet maiores harum, quidem a repellat ut architecto aperiam minima fugiat facilis quasi non dolore
+                cum. Nostrum, culpa sunt debitis delectus fugiat maiores, assumenda nisi impedit commodi excepturi illo?
+                Aliquid harum iste natus, repellat perspiciatis optio mollitia at recusandae rerum? Ipsam voluptates sed
+                beatae officiis veniam quaerat doloribus in, aliquid a rem vel magnam quasi eum modi dolores quidem hic
+                deleniti cum esse autem error? Quam perspiciatis nisi dolor deserunt? Nobis, quia, tempore ut pariatur
+                necessitatibus assumenda laboriosam deleniti consequuntur accusantium doloribus architecto maiores animi
+                modi voluptate illo in ratione accusamus minima aut iusto similique vero! Deserunt veniam laudantium
+                molestias consequuntur atque inventore soluta sequi magnam natus quo dolorem commodi, eos distinctio
+                error reiciendis? Sunt, at placeat, nesciunt in, distinctio reiciendis ducimus vero molestias ullam
+                error nulla? Similique iste exercitationem ea illo quam atque aliquid ut ex eveniet dolores sint magnam
+                nemo, ipsam, quasi ab at aliquam cum quis dolorum, molestiae quod? Quas assumenda enim, laboriosam rerum
+                pariatur praesentium iusto ea deleniti. Blanditiis vero facere optio nostrum eos officiis maxime,
+                temporibus hic, architecto suscipit provident quia deleniti explicabo reiciendis, nisi cum magni iste
+                quidem commodi dicta excepturi odio eveniet qui aliquid. Nesciunt incidunt eum aspernatur consectetur
+                dolore dicta earum neque perferendis error illum sequi laboriosam fugit saepe deserunt, dolorem amet
+                unde commodi veritatis! Esse deserunt laborum illo sunt eos ipsa eveniet suscipit earum fuga aut eaque
+                excepturi totam iure expedita aliquam error, veniam harum velit necessitatibus repellat. Et dolores
+                nobis assumenda. Iste adipisci beatae, temporibus recusandae est deleniti fugit perferendis harum ab
+                sunt, laboriosam id saepe nulla optio molestiae. Laboriosam dignissimos dicta neque totam iste
+                asperiores, sit omnis velit earum dolorum praesentium voluptas, ipsum reiciendis reprehenderit
+                perspiciatis quisquam officia distinctio quidem quibusdam quam hic! Ut qui deserunt dolorem suscipit
+                quo, illum alias ad explicabo tempore dolore est molestias facere minus neque dolores ullam tempora
+                reiciendis consequatur eveniet velit! Dolor.</p>
+        </div>
+        <div class="box" data-color="primary">
+            <p>Hey I am a box 2</p>
+        </div>
+        <div class="box">
+            <p>Hey I am a box</p>
+        </div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>
