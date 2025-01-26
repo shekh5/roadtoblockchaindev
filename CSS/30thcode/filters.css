@@ -1,0 +1,14 @@
+.conatiner{
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+}
+#forest{
+    height: 488px;
+    width: 465px;
+    object-fit: contain;
+    filter: blur(5px);
+}
+#srk{
+    filter: brightness(100%);
+}
